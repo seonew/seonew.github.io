@@ -9,9 +9,10 @@
     width: 100%; 
     height: 100%;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    margin: 0;
     overflow: hidden;
   }
-  .wrap {
+  main {
     position: relative;
     width: 100%; 
     height: 100%;
@@ -31,20 +32,46 @@
     transform: translate(-50%, -100%);
     color: #909090;
     font-size: 13px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    white-space: nowrap;
   }
   .mb30 {
     margin-bottom: 30px;
   }
+
+  @media screen and (max-width: 320px) {
+    main {
+      font-size: 24px;
+    }
+    footer {
+      font-size: 11px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    main {
+      font-size: 32px;
+    }
+    footer {
+      font-size: 14px;
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    main {
+      font-size: 36px;
+    }
+    footer {
+      font-size: 16px;
+    }
+  }
 </style>
 </head>
 <body>
-  <div class="wrap">
+  <main>
     <div class="contents">
       <div class="mb30">안녕하세요 :)</div>
       <div class="cp-spinner cp-balls"></div>
     </div>
     <footer>Copyright © 2018 Seonwoo Park</footer>
-  </div>
+  </main>
 </body>
 </html>
